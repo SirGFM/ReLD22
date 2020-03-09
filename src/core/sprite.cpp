@@ -112,7 +112,7 @@ int CppOGL::Sprite::addAnimation(CppOGL::Tile *Tiles[], int numTile, int fps, in
 	int i = 0;
 	struct CppOGL::AnimationLL *tmp;
 	if (!this->animList) {
-		this->animList = new struct CppOGL::AnimationLL;
+		this->animList = new struct CppOGL::AnimationLL();
 		tmp = this->animList;
 	}
 	else {
@@ -121,7 +121,7 @@ int CppOGL::Sprite::addAnimation(CppOGL::Tile *Tiles[], int numTile, int fps, in
 			tmp = tmp->next;
 			i++;
 		}
-		tmp->next = new struct CppOGL::AnimationLL;
+		tmp->next = new struct CppOGL::AnimationLL();
 		tmp = tmp->next;
 	}
 	tmp->self = new CppOGL::Animation(Tiles, numTile, fps, looped);

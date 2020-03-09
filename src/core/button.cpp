@@ -5,7 +5,7 @@
 #include <core/text.h>
 #include <core/button.h>
 
-CppOGL::Button::Button(char *Label, CppOGL::Callback *const CB) {
+CppOGL::Button::Button(const char *Label, CppOGL::Callback *const CB) {
 	this->label = new CppOGL::Text();
 	this->label->setText(Label, 12);
 	this->cb = (CppOGL::Callback*)CB;

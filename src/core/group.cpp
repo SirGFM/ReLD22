@@ -53,13 +53,13 @@ CppOGL::Basic* CppOGL::Group::add(CppOGL::Basic *basic) {
 		return NULL;
 	tmp = this->members;
 	if (!tmp) {
-		this->members = new struct CppOGL::BasicLL;
+		this->members = new struct CppOGL::BasicLL();
 		tmp = this->members;
 	}
 	else {
 		while (tmp->next)
 			tmp = tmp->next;
-		tmp->next = new struct BasicLL;
+		tmp->next = new struct BasicLL();
 		tmp = tmp->next;
 	}
 	tmp->self = basic;

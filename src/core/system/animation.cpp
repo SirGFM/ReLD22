@@ -5,13 +5,13 @@
 CppOGL::Animation::Animation(Tile *Tiles[], int NumTiles, int fps, int looped) {
 	int i;
 	
-	this->tiles = new struct TileLL;
+	this->tiles = new struct TileLL();
 	struct CppOGL::TileLL *tmp = this->tiles;
 	i = 0;
 	while (1) {
 		tmp->self = Tiles[i++];
 		if (i < NumTiles) {
-			tmp->next = new struct CppOGL::TileLL;
+			tmp->next = new struct CppOGL::TileLL();
 			tmp = tmp->next;
 		}
 		else

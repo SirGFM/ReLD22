@@ -13,7 +13,7 @@ class Introscene : public CppOGL::Scene {
 		int i;
 		int n;
 		int len;
-		char *curTxt;
+		const char *curTxt;
 		CppOGL::Text *text;
 		Bar *bar;
 	public:

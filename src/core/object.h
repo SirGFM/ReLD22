@@ -1,7 +1,7 @@
 #ifndef __OBJECT_H
 #define __OBJECT_H
 
-#import <core/basic.h>
+#include <core/basic.h>
 namespace CppOGL {
 	class Object : public Basic {
 		public:

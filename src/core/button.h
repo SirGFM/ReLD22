@@ -20,7 +20,7 @@ namespace CppOGL {
 		public:
 			Text *label;
 		public:
-			Button(char *Label, Callback *const CB);
+			Button(const char *Label, Callback *const CB);
 			~Button();
 			
 			void update();
